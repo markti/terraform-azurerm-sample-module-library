@@ -1,0 +1,19 @@
+name: HIPAA-HITRUST-v14.3.0
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+
+jobs:
+
+  call-terraform-test:
+    name: Run Terraform Test
+    uses: ./.github/workflows/terraform-test.yaml
+    with:
+      working_directory: 'hipaa-hitrust/v14.3.0'
+      environment: ${{ github.event.inputs.environment }}
+    secrets: inherit
