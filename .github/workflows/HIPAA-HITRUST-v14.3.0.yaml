@@ -14,6 +14,6 @@ jobs:
     name: Run Terraform Test
     uses: ./.github/workflows/terraform-test.yaml
     with:
-      working_directory: 'hipaa-hitrust/v14.3.0'
+      working_directory: 'samples/hipaa-hitrust/v14.3.0'
       environment: ${{ github.event.inputs.environment }}
     secrets: inherit
