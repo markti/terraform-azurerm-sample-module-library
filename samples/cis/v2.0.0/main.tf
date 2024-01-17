@@ -1,5 +1,5 @@
 module "main" {
-  source = "../../../modules/"
+  source = "../../../modules/cis/v2.0.0"
 }
 
 resource "random_string" "main" {
