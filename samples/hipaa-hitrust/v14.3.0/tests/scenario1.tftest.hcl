@@ -11,7 +11,7 @@ run "create_pet_name" {
   }
 
   assert {
-    condition     = length(random_pet.main.result) > 0"
+    condition     = length(random_pet.main.result) > 0
     error_message = "Name is OK"
   }
 
