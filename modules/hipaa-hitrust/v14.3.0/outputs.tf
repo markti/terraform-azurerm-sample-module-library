@@ -1,3 +1,3 @@
 output "pet_name" {
-  value = random_pet.main.result
+  value = random_pet.main.id
 }
