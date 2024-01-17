@@ -1,5 +1,5 @@
 module "main" {
-  source = "../../../modules/"
+  source = "../../../modules/hipaa-hitrust/v14.3.0"
 }
 
 resource "random_string" "main" {
